@@ -7,20 +7,34 @@
 ul{
     display: flex;
     list-style: none;
-}
+    align-items: center;
 
+}
 
 .container{
     display: flex;
     flex-direction: column;
     background-color: cadetblue;
-    height: 100vh;
+    flex-grow:1;
+}
+
+.pinco{
+    background-color: aqua;
+    width: 200px;
+    height: 150px;
+    background-image:url(../img/moebius1-400x275.jpeg);
+    background-position: center;
+    background-size: cover;
+
+
 }
 
 .guest{
     display: flex;
     background-color: black;
     flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .base-bar{
@@ -28,6 +42,7 @@ ul{
     background-color: teal;
     display: flex;
     justify-content: space-between;
+    
 
 }
 

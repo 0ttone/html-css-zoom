@@ -16,9 +16,34 @@ ul{
     flex-direction: column;
     background-color: cadetblue;
     font-family: Arial, Helvetica, sans-serif;
+    
 
     /* flex-grow:1; */
 }
+
+.top{
+    display: flex;
+    height: 25px;
+    font-size: 12px;
+    color:white;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: black;
+}
+    
+    
+
+.top div:first-child, .top div:last-child{
+    background-color: #4a4a4a;
+    padding: 5px;
+}
+.top div:first-child{
+    margin-right:5px;
+}
+    
+    
+
+
 
 .pinco{
     background-color: aqua;
@@ -42,13 +67,13 @@ ul{
     height: 25px; */
     background-color: rgba(0,255,255,0.2);
     color: white;
-    font-size: 12px;
+    font-size: 10px;
 }
 
 .guest{
     display: flex;
     background-color: black;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 105px);
     flex-grow: 2;
     flex-wrap: wrap;
     justify-content: center;
@@ -56,44 +81,61 @@ ul{
 
 .base-bar{
     height: 80px;
-    background-color: teal;
+    background-color: #222222;
     display: flex;
     justify-content: space-between;
-    
+    font-size: 14px;
 
 }
+
+
 
 .first-ul{
-    width: 300px;
     color: white;
-    padding-left: 10px;
-}
-.first-ul li{
-    text-align: center;
-    padding: 0 10px;
-
-}
-
-.central-ul li{
-    text-align: center;
-    padding: 0 10px;
-
-}
-
-
-
-
-.base-bar .central-ul{
     justify-content: space-around;
-    /* flex-grow: 1; */
-    color: white;
+    
+   
+    
+/* verifica dell uso di flex con diversi valori justify per eliminare
+dimensione del ul - ok no dimensione e center equivalente space-around */
+
+     /* width: 300px; */
+     /* padding-left: 10px; */
+
 }
 
 
+.first-ul li, .central-ul li{
+    text-align: center;
+    padding: 0 10px;
+
+}
+
+
+
+/* tolto flex grow 1 mantenuti padding */
+.central-ul{
+    justify-content: space-around;
+    color: white;
+}
+    
+    
 .end-ul{
     width: 150px;
-    color: white;
-    text-align: right;
+    color: red;
+    background-color: #4a4a4a;
+    justify-content: center;
+    
 }
+
+.fa-share-square{
+    color: green;
+}
+
+
+
+
+
+
 
 
